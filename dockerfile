@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # 6. App ke andar jo PORT use ho raha hai wo expose karenge (assume 3000)
-EXPOSE 3000
+EXPOSE 6379
 
 # 7. App start karenge
 CMD ["node", "app.js"]
