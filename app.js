@@ -3,7 +3,7 @@ const axios = require("axios");
 const Redis = require("ioredis");
 
 const app = express();
-const redis = new Redis({ host: "localhost", port: 6379 }); // Redis Docker container
+const redis = new Redis(process.env.REDIS_URL); // Redis Docker container
 const PORT = 3000;
 
 // Example API to cache (we'll use JSONPlaceholder)
